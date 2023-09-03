@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard - Legalyze</title>
+    <!-- Link to your dashboard CSS file -->
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <header>
+        <!-- Your header content goes here -->
+        <button id="updateProfileTopBtn">Update Profile</button>
+    </header>
+
+    <main>
+        <section class="dashboard">
+            <h2>Welcome to Your Dashboard</h2>
+            <div class="notification">
+                <!-- Notification to update profile -->
+                <p>Please update your profile information.</p>
+                <button id="updateProfileBtn">Update Profile</button>
+            </div>
+            <div class="profile-details">
+                <!-- Display user profile information here -->
+                <!-- You can include data dynamically from a database here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Your footer content goes here -->
+    </footer>
+
+    <!-- Modal for updating the profile -->
+    <div id="profileModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Update Profile</h2>
+            <form id="profileForm" enctype="multipart/form-data">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="mobile">Mobile:</label>
+                <input type="text" id="mobile" name="mobile" required><br><br>
+
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required><br><br>
+
+                <label for="profileImage">Profile Image:</label>
+                <input type="file" id="profileImage" name="profileImage" accept=".jpg, .jpeg, .png"><br><br>
+
+                <button type="submit">Save Changes</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- JavaScript for the dashboard -->
+    <script src="dashboard.js"></script>
+</body>
+</html>
