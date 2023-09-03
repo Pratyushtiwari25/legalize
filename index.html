@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legalyze - Legal Services</title>
+    <link rel="stylesheet" href="sih.css">
+    <style>
+        /* Additional inline CSS for this specific page */
+
+        /* Center the main content */
+        .main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Style the background image */
+        body {
+            background-image: url('bg.jpg'); /* Updated to use 'bg.jpg' */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-color: rgba(255, 255, 255, 0.5); /* Adjust the transparency level as needed */
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Style the header with transparency and shadow */
+        .header {
+            background-color: rgba(255, 255, 255, 0.7); /* Adjust the transparency level as needed */
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 120px; /* Increase the width of the logo */
+            height: 40px; /* Adjust the height of the logo */
+            margin-right: 10px;
+        }
+
+        /* Style the main content section with transparency */
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.7); /* Adjust the transparency level as needed */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .image img {
+            max-width: 100%;
+        }
+
+        /* Style the sign-up form with transparency and shadow */
+        .signup-form {
+            flex: 1;
+            padding: 20px;
+            background: none; /* Remove background */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+        }
+
+        .form-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .label {
+            font-weight: bold;
+        }
+
+        .input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Style the "Already using?" link */
+        .already-using {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .signin-link {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Style the footer buttons */
+        .footer-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .footer-buttons a {
+            text-decoration: none;
+            color: #007bff;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="logo.png" alt="Logo"> <!-- Replace 'logo.png' with your logo image path -->
+        </div>
+        <ul class="nav-list">
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="review.html">Reviews</a></li>
+            <li><a href="our-stories.html">Our Stories</a></li>
+            <li><a href="join-lawyer.html">Join as a Lawyer</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+        </ul>
+    </header>
+
+    <main class="main">
+        <section class="content">
+            <div class="signup-form">
+                <h2 class="form-title">Sign Up</h2>
+                <form class="form">
+                    <div class="form-group">
+                        <label for="name" class="label">Name:</label>
+                        <input type="text" id="name" name="name" class="input" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="label">Email:</label>
+                        <input type="email" id="email" name="email" class="input" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password" class="label">Password:</label>
+                        <input type="password" id="password" name="password" class="input" required>
+                    </div>
+
+                    <button type="submit" class="button">Sign Up</button>
+                </form>
+                <p class="already-using">Already using? <a href="signin.html" class="signin-link">Sign In</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <!-- Add your footer content here -->
+    </footer>
+</body>
+</html>
